@@ -21,7 +21,7 @@ public class GardenTask extends Task {
     @Override
     public String toString() {
         return super.toString() +
-                "%n  Garden      : %s" + gardenLocation;
+                "  Garden      : " + gardenLocation + "\n";
 
     }
 }

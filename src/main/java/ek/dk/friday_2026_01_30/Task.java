@@ -42,7 +42,7 @@ public class Task {
         return
                 "Task\n" +
                         "  Title       : " + title + "\n" +
-                        "  Description : %s%n" + description + "\n" +
-                        "  Due date    : %s" + duedate + "\n";
+                        "  Description : " + description + "\n" +
+                        "  Due date    : " + duedate + "\n";
     }
 }
