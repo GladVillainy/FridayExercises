@@ -9,7 +9,6 @@ public class PizzaDemo {
         Pizza margherita = factory.createPizza("Margherita");
 
         //Decorator pattern
-        String currency = "$";
 
         Pizza pizza1 =
                 new PepperoniTopping(
@@ -20,10 +19,25 @@ public class PizzaDemo {
                 new CheeseTopping(
                 factory.createPizza("Veggie"));
 
-        System.out.println(pizza1.getDescription() +" "+ pizza1.getCost() + currency);
-        System.out.println(pizza2.getDescription() +" "+ pizza2.getCost() + currency);
+        Pizza pizza3 =
+                new CheeseTopping(
+                        factory.createPizza("Margherita"));
 
 
-        // TODO: Place an order with a delivery strategy
+
+
+        //Strategy pattern
+        Order order1 = new Order(pizza1);
+        order1.setDeliveryStrategy(new DroneDelivery());
+        order1.processOrder();
+
+        Order order2 = new Order(pizza2);
+        order2.setDeliveryStrategy(new HomeDelivery());
+        order2.processOrder();
+
+        Order order3 = new Order(pizza3);
+        order3.setDeliveryStrategy(new Pickup());
+        order3.processOrder();
+
     }
 }
