@@ -5,11 +5,11 @@ public class PizzaFactory {
     public void createPizza(String pizzaType){
         if (pizzaType.equalsIgnoreCase("Veggie")){
             Pizza veggie = new VeggiePizza();
-            veggie.getDescription();
+            System.out.println(veggie.getDescription());
         } else
         if (pizzaType.equalsIgnoreCase("Margherita")){
             Pizza margherita = new MargheritaPizza();
-            margherita.getDescription();
+            System.out.println(margherita.getDescription());
         }
     }
 }
