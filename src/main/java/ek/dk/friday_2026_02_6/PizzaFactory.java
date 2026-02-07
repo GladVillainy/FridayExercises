@@ -2,14 +2,13 @@ package ek.dk.friday_2026_02_6;
 
 public class PizzaFactory {
 
-    public void createPizza(String pizzaType){
+    public Pizza createPizza(String pizzaType){
         if (pizzaType.equalsIgnoreCase("Veggie")){
-            Pizza veggie = new VeggiePizza();
-            System.out.println(veggie.getDescription());
+            return new VeggiePizza();
         } else
         if (pizzaType.equalsIgnoreCase("Margherita")){
-            Pizza margherita = new MargheritaPizza();
-            System.out.println(margherita.getDescription());
+            return new MargheritaPizza();
         }
+        return null;
     }
 }
