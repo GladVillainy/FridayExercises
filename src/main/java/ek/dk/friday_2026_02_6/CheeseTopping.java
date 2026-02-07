@@ -14,6 +14,4 @@ public class CheeseTopping extends ToppingDecorator {
     public double getCost() {
         return 0;
     }
-
-    // TODO: override getDescription() and getCost()
 }

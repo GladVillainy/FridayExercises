@@ -10,5 +10,4 @@ public class VeggiePizza implements Pizza {
     public double getCost() {
         return 0;
     }
-    // TODO: implement getDescription() and getCost()
 }

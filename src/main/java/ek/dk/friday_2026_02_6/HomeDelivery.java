@@ -5,5 +5,4 @@ public class HomeDelivery implements DeliveryStrategy {
     public void deliver(Pizza pizza) {
 
     }
-    // TODO: implement deliver(Pizza pizza)
 }
