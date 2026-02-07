@@ -13,7 +13,9 @@ public class Order {
     }
 
     public void processOrder() {
-        System.out.println("Order: " + pizza.getDescription() + " $" + pizza.getCost());
-        // TODO: call deliver on the selected strategy
+        String currency = "$";
+        System.out.println("\nOrder: " + pizza.getDescription()
+                + " " + pizza.getCost()+ currency);
+        deliveryStrategy.deliver(pizza);
     }
 }
