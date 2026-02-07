@@ -9,6 +9,8 @@ public class PizzaDemo {
         Pizza margherita = factory.createPizza("Margherita");
 
         //Decorator pattern
+        String currency = "$";
+
         Pizza pizza1 =
                 new PepperoniTopping(
                 new CheeseTopping(
@@ -18,8 +20,8 @@ public class PizzaDemo {
                 new CheeseTopping(
                 factory.createPizza("Veggie"));
 
-        System.out.println(pizza1.getDescription() +" $"+ pizza1.getCost());
-        System.out.println(pizza2.getDescription() +" $"+ pizza2.getCost());
+        System.out.println(pizza1.getDescription() +" "+ pizza1.getCost() + currency);
+        System.out.println(pizza2.getDescription() +" "+ pizza2.getCost() + currency);
 
 
         // TODO: Place an order with a delivery strategy
