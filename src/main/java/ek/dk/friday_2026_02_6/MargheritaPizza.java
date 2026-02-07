@@ -3,7 +3,7 @@ package ek.dk.friday_2026_02_6;
 public class MargheritaPizza implements Pizza {
     @Override
     public String getDescription() {
-        return "Margherita Pizza $" + getCost();
+        return "Margherita Pizza";
     }
 
     @Override
