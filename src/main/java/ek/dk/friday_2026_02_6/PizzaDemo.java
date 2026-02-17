@@ -10,7 +10,6 @@ public class PizzaDemo {
         Scanner scan = new Scanner(System.in);
 
         while (run) {
-            
             //Basic pizza (Factory)
             System.out.println("Which pizza would you like to order? " +
                     "Margherita or veggie?");
@@ -79,8 +78,8 @@ public class PizzaDemo {
             Pizza veggie = factory.createPizza("Veggie");
             Pizza margherita = factory.createPizza("Margherita");
 
-            //Decorator pattern
 
+            //Decorator pattern
             Pizza pizza1 =
                     new PepperoniTopping(
                             new CheeseTopping(
@@ -93,6 +92,7 @@ public class PizzaDemo {
             Pizza pizza3 =
                     new CheeseTopping(
                             factory.createPizza("Margherita"));
+
 
 
             //Strategy pattern
