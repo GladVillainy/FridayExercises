@@ -1,13 +1,13 @@
-package ek.dk.friday_2026_02_6;
+package ek.dk.friday_2026_02_06;
 
-public class CheeseTopping extends ToppingDecorator {
-    public CheeseTopping(Pizza pizza) {
+public class PepperoniTopping extends ToppingDecorator {
+    public PepperoniTopping(Pizza pizza) {
         super(pizza);
     }
 
     @Override
     public String getDescription() {
-        return pizza.getDescription() + ", Cheese";
+        return pizza.getDescription() + ", Pepperoni";
     }
 
     @Override
